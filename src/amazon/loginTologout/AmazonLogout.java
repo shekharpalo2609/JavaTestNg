@@ -64,6 +64,12 @@ public class AmazonLogout {
 		wishList.click();
 		Thread.sleep(3000);
 		driver.navigate().refresh();
+		
+		/*
+		 * WebElement closeWishList =
+		 * driver.findElement(By.xpath("(//span[@class='a-button-text'])[43]"));
+		 * closeWishList.click();
+		 */		
 
 		WebElement addToCart = driver.findElement(By.xpath("(//input[@id='add-to-cart-button'])[2]"));
 		addToCart.click();
