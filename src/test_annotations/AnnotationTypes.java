@@ -22,6 +22,11 @@ public class AnnotationTypes {
 		System.out.println("After Suite");
 	}
 
+	@Test
+	void test2() {
+		System.out.println("Test 2");
+	}
+	
 	@BeforeTest
 	void beforeTest() {
 		System.out.println("Before Test");
@@ -53,8 +58,8 @@ public class AnnotationTypes {
 	}
 
 	@Test
-	void test() {
-		System.out.println("Test");
+	void test1() {
+		System.out.println("Test 1");
 	}
 
 }

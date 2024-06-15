@@ -2,6 +2,7 @@ package amazon.loginTologout;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -25,13 +26,14 @@ public class AmazonWishlist {
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.amazon.in/");
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		Actions actions = new Actions(driver);
 
 		String credSheet = "credentials";
 		FileInputStream file = new FileInputStream("C:\\Users\\ishan\\git\\Selenium\\TestData\\Amazon login.xlsx");
 		Workbook workbook = WorkbookFactory.create(file);
 
 		WebElement signInHover = driver.findElement(By.xpath("//span[@class='nav-line-2 ']"));
-		Actions actions = new Actions(driver);
 		actions.moveToElement(signInHover).perform();
 
 		WebElement signInButton = driver.findElement(By.xpath("(//span[@class = 'nav-action-inner'])[1]"));
@@ -63,17 +65,6 @@ public class AmazonWishlist {
 
 		WebElement wishList = driver.findElement(By.id("add-to-wishlist-button-submit"));
 		wishList.click();
-		Thread.sleep(3000);
-
-		/*
-		 * WebElement closeWishList =
-		 * driver.findElement(By.xpath("(//span[@class='a-button-text'])[43]"));
-		 * closeWishList.click();
-		 */		
-		driver.navigate().refresh();
-		
-		Thread.sleep(1000);
-		driver.quit();
 	}
 
 }
