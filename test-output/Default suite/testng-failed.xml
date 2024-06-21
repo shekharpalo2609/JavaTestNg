@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="amazon.scenario.TestCase1">
+      <class name="amazon.ten.scenarios.TC4">
         <methods>
-          <include name="logout"/>
-          <include name="login"/>
-          <include name="search"/>
+          <include name="launchAmazon"/>
+          <include name="closeAmazon"/>
+          <include name="searchMouseCover"/>
         </methods>
-      </class> <!-- amazon.scenario.TestCase1 -->
+      </class> <!-- amazon.ten.scenarios.TC4 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,8 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="amazon.scenario.TestCase1"/>
-      <class name="amazon.scenario.TestCase2"/>
+      <class name="amazon.loginTologout.AmazonLogin"/>
+      <class name="amazon.loginTologout.AmazonSearch"/>
+      <class name="amazon.loginTologout.AmazonWishlist"/>
+      <class name="amazon.loginTologout.AmazonCart"/>
+      <class name="amazon.loginTologout.AmazonLogout"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
