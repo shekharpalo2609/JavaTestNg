@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataProvider.amazon.DataProviderAmazon">
+      <class name="dataProvider.facebook.registration.FacebookRegistration">
         <methods>
-          <include name="amazonLogin" invocation-numbers="0 1 2 3 4"/>
+          <include name="launchFacebook"/>
+          <include name="facebookRegistration"/>
+          <include name="quitFacebook"/>
         </methods>
-      </class> <!-- dataProvider.amazon.DataProviderAmazon -->
+      </class> <!-- dataProvider.facebook.registration.FacebookRegistration -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

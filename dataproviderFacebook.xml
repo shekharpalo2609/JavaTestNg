@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+	<test thread-count="5" name="Test on Chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="dataProvider.facebook.registration.FacebookRegistration" />
+			<class name="dataProvider.facebook.registration.DDT_FacebookRegistration" />		
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Test on Edge">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="dataProvider.facebook.registration.FacebookRegistration" />
+			<class name="dataProvider.facebook.registration.DDT_FacebookRegistration" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Test on Firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="dataProvider.facebook.registration.FacebookRegistration" />
+			<class name="dataProvider.facebook.registration.DDT_FacebookRegistration" />
+		</classes>
+	</test>
+</suite> 
