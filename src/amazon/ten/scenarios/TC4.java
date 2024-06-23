@@ -20,11 +20,10 @@ public class TC4 extends LaunchAndQuit{
 		
 		//WebElement selectOutOfStock = driver.findElement(By.xpath("(//i[@class='a-icon a-icon-checkbox'])[127]"));
 		//WebElement selectOutOfStock = driver.findElement(By.xpath("(//input[@type='checkbox'])[124]"));
-		WebElement selectOutOfStock = driver.findElement(By.xpath("(//span[@class = 'a-size-base a-color-base'])[141]"));
-		selectOutOfStock.click();
+		//WebElement selectOutOfStock = driver.findElement(By.xpath("(//span[@class = 'a-size-base a-color-base'])[141]"));
+		WebElement selectOutOfStock = driver.findElement(By.xpath("//span[contains(text(),'Include Out of Stock')]"));
 		
-		WebElement selectMouseCover = driver.findElement(By.partialLinkText("iTronix Waterproof Mobile Pouch Cover"));
-		selectMouseCover.click();
+		selectOutOfStock.click();
 		System.out.println("TC4 END");
 	}
 }

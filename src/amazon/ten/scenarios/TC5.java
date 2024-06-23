@@ -20,8 +20,12 @@ public class TC5 extends LaunchAndQuit {
 		WebElement nextPage = driver.findElement(By.cssSelector("[aria-label='Go to page 2']"));
 		nextPage.click();
 		
-		WebElement selectCamera = driver.findElement(By.partialLinkText("BLACKPOOL 4K Action Camera with Accessories Kit | WiFi | 16 MP | 170 Degree Wide"));
-		selectCamera.click();
+		WebElement select35thCamera = driver.findElement(By.xpath("//span[normalize-space()='Nikon D7500 DX-Format Digital SLR Body (Black)']"));
+		/*
+		 * WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		 * wait.until(ExpectedConditions.titleContains("Camera"));
+		 */
+		select35thCamera.click();
 	}
 	
 }

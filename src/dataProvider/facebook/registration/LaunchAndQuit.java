@@ -37,7 +37,6 @@ public class LaunchAndQuit {
 
 	@AfterMethod
 	public void quitFacebook() {
-		System.out.println("QUIT");
-		// driver.quit();
+		driver.quit();
 	}
 }

@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataProvider.facebook.registration.FacebookRegistration">
+      <class name="assert_false.AssertFalse">
         <methods>
-          <include name="launchFacebook"/>
-          <include name="facebookRegistration"/>
-          <include name="quitFacebook"/>
+          <include name="test2"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- dataProvider.facebook.registration.FacebookRegistration -->
+      </class> <!-- assert_false.AssertFalse -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

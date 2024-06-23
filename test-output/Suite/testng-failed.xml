@@ -4,13 +4,93 @@
   <test thread-count="5" parallel="tests" name="Test on Chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="dataProvider.facebook.registration.DDT_FacebookRegistration">
+      <class name="amazon.ten.scenarios.TC10">
         <methods>
-          <include name="facebookRegistration"/>
-          <include name="launchFacebook"/>
-          <include name="quitFacebook"/>
+          <include name="searchShoe"/>
+          <include name="launchAmazon"/>
+          <include name="closeAmazon"/>
         </methods>
-      </class> <!-- dataProvider.facebook.registration.DDT_FacebookRegistration -->
+      </class> <!-- amazon.ten.scenarios.TC10 -->
+      <class name="amazon.ten.scenarios.TC9">
+        <methods>
+          <include name="launchAmazon"/>
+          <include name="closeAmazon"/>
+          <include name="deals"/>
+        </methods>
+      </class> <!-- amazon.ten.scenarios.TC9 -->
     </classes>
   </test> <!-- Test on Chrome(failed) -->
+  <test thread-count="5" parallel="tests" name="Test on Edge(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="amazon.ten.scenarios.TC10">
+        <methods>
+          <include name="searchShoe"/>
+          <include name="launchAmazon"/>
+          <include name="closeAmazon"/>
+        </methods>
+      </class> <!-- amazon.ten.scenarios.TC10 -->
+      <class name="amazon.ten.scenarios.TC8">
+        <methods>
+          <include name="launchAmazon"/>
+          <include name="closeAmazon"/>
+          <include name="searchBook"/>
+        </methods>
+      </class> <!-- amazon.ten.scenarios.TC8 -->
+      <class name="amazon.ten.scenarios.TC9">
+        <methods>
+          <include name="launchAmazon"/>
+          <include name="closeAmazon"/>
+          <include name="deals"/>
+        </methods>
+      </class> <!-- amazon.ten.scenarios.TC9 -->
+      <class name="amazon.ten.scenarios.TC7">
+        <methods>
+          <include name="launchAmazon"/>
+          <include name="closeAmazon"/>
+          <include name="searchMango"/>
+        </methods>
+      </class> <!-- amazon.ten.scenarios.TC7 -->
+    </classes>
+  </test> <!-- Test on Edge(failed) -->
+  <test thread-count="5" parallel="tests" name="Test on Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="amazon.ten.scenarios.TC6">
+        <methods>
+          <include name="selectRedmi"/>
+          <include name="closeAmazon"/>
+          <include name="launchAmazon"/>
+        </methods>
+      </class> <!-- amazon.ten.scenarios.TC6 -->
+      <class name="amazon.ten.scenarios.TC10">
+        <methods>
+          <include name="searchShoe"/>
+          <include name="closeAmazon"/>
+          <include name="launchAmazon"/>
+        </methods>
+      </class> <!-- amazon.ten.scenarios.TC10 -->
+      <class name="amazon.ten.scenarios.TC8">
+        <methods>
+          <include name="closeAmazon"/>
+          <include name="launchAmazon"/>
+          <include name="searchBook"/>
+        </methods>
+      </class> <!-- amazon.ten.scenarios.TC8 -->
+      <class name="amazon.ten.scenarios.TC9">
+        <methods>
+          <include name="closeAmazon"/>
+          <include name="launchAmazon"/>
+          <include name="deals"/>
+        </methods>
+      </class> <!-- amazon.ten.scenarios.TC9 -->
+      <class name="amazon.ten.scenarios.TC7">
+        <methods>
+          <include name="closeAmazon"/>
+          <include name="launchAmazon"/>
+          <include name="searchMango"/>
+        </methods>
+      </class> <!-- amazon.ten.scenarios.TC7 -->
+    </classes>
+  </test> <!-- Test on Firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->
