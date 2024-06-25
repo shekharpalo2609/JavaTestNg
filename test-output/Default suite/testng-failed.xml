@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assert_false.AssertFalse">
+      <class name="amazonAssert.AmazonPagesAssert">
         <methods>
-          <include name="test2"/>
-          <include name="test1"/>
+          <include name="testPages"/>
         </methods>
-      </class> <!-- assert_false.AssertFalse -->
+      </class> <!-- amazonAssert.AmazonPagesAssert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
