@@ -11,5 +11,5 @@
     <classes>
       <class name="grouping.basic.GroupingWithExcludeTag"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test>
+</suite> 

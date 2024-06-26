@@ -1,3 +1,4 @@
+//Assertion demo to check title of the amazon login page
 package amazonAssert;
 
 import java.io.FileInputStream;
