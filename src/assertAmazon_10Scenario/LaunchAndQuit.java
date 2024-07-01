@@ -21,7 +21,7 @@ public class LaunchAndQuit {
 	}
 
 	@AfterMethod
-	public void closeAmazon() throws InterruptedException {
-		//driver.quit();
+	public void closeAmazon() {
+		driver.quit();
 	}
 }

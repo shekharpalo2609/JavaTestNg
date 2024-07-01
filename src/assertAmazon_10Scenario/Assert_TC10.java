@@ -11,8 +11,9 @@ public class Assert_TC10 extends LaunchAndQuit {
 
 	@Test
 	public void assertSearchShoe() throws InterruptedException {
+		WebElement searchBox = driver.findElement(By.id("manish"));
 
-		WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
+	//	WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
 		searchBox.sendKeys("shoe");
 		searchBox.sendKeys(Keys.ENTER);
 		

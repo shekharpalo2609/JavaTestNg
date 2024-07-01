@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assertAmazon_10Scenario.Assert_TC01">
+      <class name="iTest.listener.Testlistener_Amazon">
         <methods>
           <include name="assertSelectShoe"/>
-          <include name="launchAmazon"/>
-          <include name="closeAmazon"/>
         </methods>
-      </class> <!-- assertAmazon_10Scenario.Assert_TC01 -->
+      </class> <!-- iTest.listener.Testlistener_Amazon -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
