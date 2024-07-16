@@ -10,7 +10,7 @@ public class AssertDemo {
 	{
 	//Assert.assertEquals(false, true);
 	//	Assert.assertEquals(false, false, "Sorry but conditions are not matching");
-	Assert.assertEquals(11, 90);
+	Assert.assertEquals(11, 90,"TC failed");
 	
 	
 	}
